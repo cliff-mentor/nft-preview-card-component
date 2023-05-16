@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  font-family: 'Outfit', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+  width: 300px;
+  min-width: 300px;
+  padding: 23px;
+  box-shadow: 0 10px 40px hsla(0, 0%, 0%, 0.2);
+}
+
+.container h2:hover,
+.container em:hover,
+.container__image:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.container__image {
+  border-radius: 15px;
+  position: relative;
+}
+
+.container__image .image--hover {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 15px;
+  background-color: hsla(178, 100%, 50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__image:hover .image--hover {
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.container__image .image--hover img {
+  opacity: 0;
+  height: 50px;
+  width: 50px;
+}
+
+.container__image:hover .image--hover img {
+  opacity: 1;
+}
+
+.container__image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.container__content {
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.container__content h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.container__content p {
+  margin: 10px 0 20px;
+  line-height: 26px;
+}
+
+.content__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__info img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.content__info p {
+  display: inline-block;
+  margin: 0;
+}
+
+.info__price {
+  color: hsl(178, 100%, 50%);
+}
+
+.container__author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container__author img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.container__author p {
+  margin: 0;
+}
+
+.container__author em {
+  color: hsl(0, 0%, 100%);
+  font-style: normal;
+}
